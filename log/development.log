@@ -2353,3 +2353,14 @@ Processing by AuthorsController#post as HTML
 Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/authors/3/posts/1" for 71.185.39.134 at 2020-07-08 17:38:41 +0000
+Cannot render console from 71.185.39.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by AuthorsController#post as HTML
+  Parameters: {"id"=>"3", "post_id"=>"1"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.5ms)
+
+
